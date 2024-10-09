@@ -1,4 +1,24 @@
 papers:
+  - title: "Hierarchical Deconstruction of LLM Reasoning: A Graph-Based Framework for Analyzing Knowledge Utilization"
+    authors: "<b><u>Miyoung Ko*</u></b>, Sue Hyun Park*, Joonsuk Park, Minjoon Seo"
+    venue: "EMNLP 2024"
+    paper_pdf: "https://arxiv.org/abs/2406.19502"
+    dataset: "https://huggingface.co/datasets/kaist-ai/DepthQA"
+    selected: y
+  
+  - title: "The BiGGen Bench: A Principled Benchmark for Fine-grained Evaluation of Language Models with Language Models"
+    authors: "Seungone Kim, Juyoung Suk, Ji Yong Cho, Shayne Longpre, Chaeeun Kim, Dongkeun Yoon, Guijin Son, Yejin Cho, Sheikh Shafayat, Jinheon Baek, Sue Hyun Park, Hyeonbin Hwang, Jinkyung Jo, Hyowon Cho, Haebin Shin, Seongyun Lee, Hanseok Oh, Noah Lee, Namgyu Ho, Se June Joo, <b><u>Miyoung Ko</u></b>, Yoonjoo Lee, Hyungjoo Chae, Jamin Shin, Joel Jang, Seonghyeon Ye, Bill Yuchen Lin, Sean Welleck, Graham Neubig, Moontae Lee, Kyungjae Lee, Minjoon Seo"
+    venue: "Preprint"
+    paper_pdf: "https://arxiv.org/abs/2406.05761"
+    dataset: "https://huggingface.co/datasets/prometheus-eval/BiGGen-Bench"
+    selected: y
+
+  - title: "KTRL+F: Knowledge-Augmented In-Document Search"
+    authors: "Hanseok Oh, Haebin Shin, <b><u>Miyoung Ko</u></b>, Hyunji Lee, Minjoon Seo"
+    venue: "NAACL 2024"
+    paper_pdf: "https://arxiv.org/abs/2311.08329"
+    selected: y
+
   - title: "ClaimDiff: Comparing and Contrasting Claims on Contentious Topics"
     authors: "<b><u>Miyoung Ko</u></b>, Ingyu Seong, Hwaran Lee, Joonsuk Park, Minsuk Chang, Minjoon Seo"
     venue: "Findings of ACL 2023"
