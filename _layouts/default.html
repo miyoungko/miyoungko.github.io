@@ -61,12 +61,14 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
 
-    <section class="header">
-      <div class="row">
-        <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
-        </div>
-        <div class="nine columns main-description">
+    <div class="main-content row">
+
+        <section class="header">
+          <div class="avatar-container">
+            <a href="{{ site.baseurl }}/"><img class="u-max-full-width avatar"
+                src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
+          </div>
+          <div class="main-description avatar-text">
             <h1>{{ site.data.main_info.name }}</h1>
             <p>{{ site.data.main_info.title }}</p>
             <p>{{ site.data.main_info.email }}</p>
@@ -74,28 +76,31 @@
               <span onclick="window.open('{{ site.data.main_info.cv }}')" style="cursor: pointer">
                 <i class="fa fa-download" aria-hidden="true"></i>
               </span>
-              
+    
               <span onclick="window.open('{{ site.data.main_info.semantic_scholar }}')" style="cursor: pointer">
                 <i class="ai fa ai-semantic-scholar-square" aria-hidden="true"></i>
               </span>
-
+    
               <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
                 <i class="ai fa ai-google-scholar-square" aria-hidden="true"></i>
               </span>
-
+    
               <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
               </span>
-
+    
               <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
                 <i class="fa fa-github" aria-hidden="true"></i>
               </span>
             </p>
-        </div>
-      </div>
-    </section>
+          </div>
+        </section>
 
-    {{ content}}
+        <div class="content">
+          {{ content }}
+        </div>
+
+    </div>
 
     <div class="footer">
       <div class="row">
@@ -130,7 +135,7 @@
   <!-- Google Analytics -->
   {% include google_analytics.html %}
 
-<!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

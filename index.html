@@ -11,24 +11,24 @@ layout: default
 <!-- ========== Education ========== -->
 <div class="docs-section" id="education">
   <h5>Education</h5>
-        <div class="paper">
+  <div class="paper">
           <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST) <b style="float:right;">Mar. 2021 - Present</b></b></p>
-          <p>Ph.D. Student, KAIST AI (advisor: <a href="https://seominjoon.github.io/">Minjoon Seo</a>)</p>
-          <p></p>
-        </div>
-      
-        <div class="paper">
-          <p class="title"><b>Korea University<b style="float:right;"> Sep. 2018 - Aug. 2020 </b></b></p>
-          <p>M.S., Department of Computer Science and Engineering (advisor: <a href="https://dmis.korea.ac.kr/jaewoo-kang-p-i">Jaewoo Kang</a>)</p>
-          <p></p>
-        </div>
+    <p>Ph.D. Student, KAIST AI (advisor: <a href="https://seominjoon.github.io/">Minjoon Seo</a>)</p>
+    <p></p>
+  </div>
 
-        <div class="paper">
-          <p class="title"><b>Korea University<b style="float:right;"> Mar. 2014 - Aug. 2018 </b></b></p>
-          <p>B.S., Department of Chemistry</p>
-          <p>B.S. (Double Major), Department of Computer Science and Engineering</p>
-          <p></p>
-        </div>
+  <div class="paper">
+    <p class="title"><b>Korea University<b style="float:right;"> Sep. 2018 - Aug. 2020 </b></b></p>
+          <p>M.S., Department of Computer Science and Engineering (advisor: <a href="https://dmis.korea.ac.kr/jaewoo-kang-p-i">Jaewoo Kang</a>)</p>
+    <p></p>
+  </div>
+
+  <div class="paper">
+    <p class="title"><b>Korea University<b style="float:right;"> Mar. 2014 - Aug. 2018 </b></b></p>
+    <p>B.S., Department of Chemistry</p>
+    <p>B.S. (Double Major), Department of Computer Science and Engineering</p>
+    <p></p>
+  </div>
 </div>
 
 <!-- ========== PUBLICATIONS ========== -->
@@ -47,56 +47,56 @@ layout: default
     <div class="tab-pane active" id="papers-selected">
       {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
       {% for paper in selected_papers %}
-        <div class="paper">
-          <div class="row">
-            <!--
+      <div class="paper">
+        <div class="row">
+          <!--
             <div class="four columns">
               <div class="figure">
                 <img src="{{ paper.image }}" width="100%">
               </div>
             </div>
             -->
-            <div class="twelve columns">
-              {% if paper.year %}
+          <div class="twelve columns">
+            {% if paper.year %}
                 <p><h5>{{ paper.year }}</h5><hr /></p>
+            {% endif %}
+            <p class="title"><b>{{ paper.title }}</b></p>
+            <p>{{ paper.authors }}</p>
+            <p><i>{{ paper.venue }}</i></p>
+            <div class="paper-buttons">
+              {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
               {% endif %}
-              <p class="title"><b>{{ paper.title }}</b></p>
-              <p>{{ paper.authors }}</p>
-              <p><i>{{ paper.venue }}</i></p>
-              <div class="paper-buttons">
-                {% if paper.paper_pdf %}
-                  <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-                {% endif %}
 
-                {% if paper.poster %}
-                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-                {% endif %}
+              {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+              {% endif %}
 
-                {% if paper.video %}
-                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-                {% endif %}
+              {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+              {% endif %}
 
-                {% if paper.code %}
-                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-                {% endif %}
-                {% if paper.dataset %}
-                  <a class="button" href="{{ paper.dataset }}" target="_blank">Data</a>
-                {% endif %}
-                {% if paper.slides %}
-                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-                {% endif %}
-                
-                {% if paper.twitter %}
-                  <a class="button" href="{{ paper.twitter }}" target="_blank">Twitter</a>
-                {% endif %}
-              </div>
+              {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+              {% endif %}
+              {% if paper.dataset %}
+              <a class="button" href="{{ paper.dataset }}" target="_blank">Data</a>
+              {% endif %}
+              {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+              {% endif %}
+
+              {% if paper.twitter %}
+              <a class="button" href="{{ paper.twitter }}" target="_blank">Twitter</a>
+              {% endif %}
             </div>
-          </div>       
+          </div>
         </div>
+      </div>
       {% endfor %}
       <h6><b><i>( * indicates equal contribution )</i></b></h6>
     </div>
-    
+
     <!-- <div class="tab-pane" id="papers-all">
       {% for paper in site.data.publications.papers %}
         <div class="paper">
@@ -136,11 +136,11 @@ layout: default
         </div>
     {% endfor %}
     </div> -->
-    
-</div>
 
-<!-- ========== RESUME ========== -->
-<!--div class="docs-section" id="resume">
+  </div>
+</div>
+  <!-- ========== RESUME ========== -->
+  <!--div class="docs-section" id="resume">
   <h4>Vitæ</h4>
 
   <p>Full CV in <a href={{ "/assets/cv/CV.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>-->
@@ -165,4 +165,4 @@ layout: default
   </ul>
 </div> -->
 
-<!--/div> -->
+  <!--/div> -->
