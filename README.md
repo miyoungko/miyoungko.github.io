@@ -1,4 +1,4 @@
-# Miyoung Ko's Website (based on Joel Jang's template)
+# Miyoung Ko's Website
 
 ## Updates guide
 Change one of the files in `_data`, unless you are changing the look of the website.
