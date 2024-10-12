@@ -31,12 +31,31 @@ layout: default
   </div>
 </div>
 
+
+<!-- ========== EXPERIENCE ========== -->
+
+<div class="docs-section" id="experience">
+  <h5>Experience</h5>
+  {% for item in site.data.experience.experience %}
+    <div class="paper">
+      <p class="title">
+        <b>{{ item.company }}, {{ item.location }}</b>
+        <b style="float:right">{{ item.period.start }} - {{ item.period.end }}</b>
+        <p>{{ item.role }}</p>
+      </p>
+    </div>
+    
+  {% endfor %}
+</div>
+
+
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
   <h5>Publications</h5>
 
-  <!-- <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/> -->
-  </p>
+
+  <!-- <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/></p> -->
+  
 
   <!-- <ul class="tab-nav">
     <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
